@@ -1,5 +1,5 @@
 
-## Feature
+## Features
 <dl>
   <dt>React + Material UI</dt>
   <dd>Fully integrated React, Material UI</dd>
