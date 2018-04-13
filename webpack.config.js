@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
   entry: {
       main: [
-          './assets/js/App.jsx',
+          './assets/js/index.jsx',
           'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true'
       ]
   },

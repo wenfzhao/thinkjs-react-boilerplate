@@ -16,7 +16,7 @@
     "type": "file",
     "file": {
       "timeout": 86400000,
-      "cachePath": "/home/vagrant/Workspace/thinkjs-react-boilerplate/runtime/cache",
+      "cachePath": "/Users/wzhao/Workspace/thinkjs-react-boilerplate/runtime/cache",
       "pathDepth": 1,
       "gcInterval": 86400000
     }
@@ -42,13 +42,13 @@
       "cookie": {
         "name": "thinkjs"
       },
-      "sessionPath": "/home/vagrant/Workspace/thinkjs-react-boilerplate/runtime/session"
+      "sessionPath": "/Users/wzhao/Workspace/thinkjs-react-boilerplate/runtime/session"
     }
   },
   "view": {
     "type": "nunjucks",
     "nunjucks": {
-      "viewPath": "/home/vagrant/Workspace/thinkjs-react-boilerplate/view",
+      "viewPath": "/Users/wzhao/Workspace/thinkjs-react-boilerplate/view",
       "sep": "_",
       "extname": ".html"
     }
@@ -60,14 +60,14 @@
       "backups": 10,
       "absolute": true,
       "maxLogSize": 51200,
-      "filename": "/home/vagrant/Workspace/thinkjs-react-boilerplate/logs/app.log"
+      "filename": "/Users/wzhao/Workspace/thinkjs-react-boilerplate/logs/app.log"
     },
     "dateFile": {
       "level": "ALL",
       "absolute": true,
       "pattern": "-yyyy-MM-dd",
       "alwaysIncludePattern": true,
-      "filename": "/home/vagrant/Workspace/thinkjs-react-boilerplate/logs/app.log"
+      "filename": "/Users/wzhao/Workspace/thinkjs-react-boilerplate/logs/app.log"
     }
   }
 }

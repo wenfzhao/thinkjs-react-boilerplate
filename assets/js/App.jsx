@@ -1,9 +1,9 @@
 // main.js
 import React from 'react';
-import ReactDOM from 'react-dom';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
+import { hot } from 'react-hot-loader';
 
 const App = () => (
   <MuiThemeProvider muiTheme={getMuiTheme()}>
@@ -11,7 +11,4 @@ const App = () => (
   </MuiThemeProvider>
 );
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('content')
-);
+export default hot(module)(App);
