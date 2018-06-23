@@ -3,12 +3,6 @@ const isDev = think.env === 'development';
 
 module.exports = [
   {
-    handle: 'webpack-dev',
-    options: {
-      isDev: isDev
-    }
-  },
-  {
     handle: 'meta',
     options: {
       logRequest: isDev,

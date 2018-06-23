@@ -7,7 +7,7 @@ import { hot } from 'react-hot-loader';
 
 const App = () => (
   <MuiThemeProvider muiTheme={getMuiTheme()}>
-    <RaisedButton label="Click Me!!!!!!!!!!" />
+    <RaisedButton label="Clicksssss Me!!!!!!!!!!" />
   </MuiThemeProvider>
 );
 

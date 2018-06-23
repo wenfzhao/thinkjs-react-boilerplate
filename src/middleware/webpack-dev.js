@@ -4,6 +4,7 @@ import webpackMiddleware from 'koa-webpack';
 
 
 module.exports = options => {
+    return () => null;
     return webpackMiddleware({
         config: config
     });

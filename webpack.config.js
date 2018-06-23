@@ -5,31 +5,34 @@ module.exports = {
   entry: {
       main: [
           './assets/js/index.jsx',
-          'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true'
+          'webpack-dev-server/client?http://localhost:3001',
+          'webpack/hot/only-dev-server'
       ]
   },
+  mode: 'development',
   output: {
     path: path.join(__dirname, '/www/static/js/'),
     publicPath: '/static/js',
     filename: 'bundle.js'
   },
   plugins: [
-      new webpack.HotModuleReplacementPlugin(),
-      new webpack.NoEmitOnErrorsPlugin()
+      new webpack.HotModuleReplacementPlugin()
   ],
   resolve: {
     extensions: ['.js', '.jsx']
   },
   module: {
   //loaders 
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
-        loader: 'babel-loader',
-//        cacheDirectory: false,
-        query: {
-          presets: ['react', 'es2015-loose', 'stage-0'],
-          plugins: ['transform-runtime']
+        use: {
+          loader: 'babel-loader',
+  //        cacheDirectory: false,
+          options: {
+            presets: ['react', 'es2015-loose', 'stage-0'],
+            plugins: ['transform-runtime']
+          },
         },
         exclude: /node_modules/
       },
@@ -41,5 +44,11 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  devServer: {
+    contentBase: "/static/js",
+    historyApiFallback: true,
+    inline: true,
+    hot: true,
+}
 }
