@@ -6,7 +6,6 @@ module.exports = {
       main: [
           './assets/js/index.jsx',
           'webpack-dev-server/client?http://localhost:3001',
-          'webpack/hot/only-dev-server'
       ]
   },
   mode: 'development',
@@ -46,9 +45,12 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: "/static/js",
-    historyApiFallback: true,
-    inline: true,
+    contentBase: "/static/js/",
+    host: 'localhost',
+    port: 3001,
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    },
     hot: true,
 }
 }

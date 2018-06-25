@@ -9,7 +9,6 @@ ReactDOM.render(
 );
 
 if (module.hot) {
-  module.hot.accept('./App', () => {
-      render(<App />, document.getElementById('content'))
-  })
+  __webpack_public_path__ = "http://localhost:3001/static/js/";
+  module.hot.accept()
 }
