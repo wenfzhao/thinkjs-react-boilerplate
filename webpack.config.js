@@ -45,12 +45,12 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: "/static/js/",
     host: 'localhost',
     port: 3001,
     headers: {
       'Access-Control-Allow-Origin': '*'
     },
     hot: true,
-}
+    inline: true,
+  }
 }
