@@ -11,7 +11,7 @@
   <dd>Support webpack hot reload via koa-webpack middleware. Both frontend code and backend code support live reload. No need to manually restart server or use nodemon to restart server on file changes.</dd>
 </dl>
 
-<sub><i>Keywords: ThinksJS, React.js, Hot Reloading, ESNext, Babel, Webpack, Material-UI</i></sub>
+<sub><i>Keywords: ThinkJS, React.js, Hot Reloading, ESNext, Babel, Webpack, Material-UI</i></sub>
 
 ## Install dependencies
 
